@@ -18,6 +18,11 @@ h1, h2, h3, h4, h5, h6, p, ul{
     padding: 0;
 }
 
+img{
+    display: block;
+    max-width: 100%;
+}
+
 /* Конец Обнуления стилей*/
 
 
@@ -39,7 +44,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 
-    outline:2px solid tomato;
+  
 }
 
 /*Хедер, основная навигация страницы*/
@@ -211,7 +216,7 @@ body {
     
 }
 
-.main-portfolio img{
+.main-portfolio .card-thumb{
     display: inline-block;
     
 }
@@ -255,7 +260,7 @@ body {
 }
 
 /*Футер*/
-.footer {
+footer {
   background-color: var(--second-bcg-color);
 }
 
