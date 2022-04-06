@@ -50,11 +50,12 @@ body {
 }
 
 /*Главная навигация*/
+.header .logo{
+    margin-right: 93px;
+}
 .logo {
   display: inline-block;
-  margin-right: 93px;
-
-  font-family: Raleway, sans-serif;
+    font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -109,7 +110,7 @@ body {
     justify-content: space-between;
     
 }
-.contacts .item+.item{
+.header .contacts .item+.item{
     margin-left: 50px;
     
 }
@@ -257,8 +258,22 @@ body {
 footer {
   background-color: var(--second-bcg-color);
 }
-footer .logo {
+
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer .address .item+.item{
+    margin-top: 9px;
+}
+.footer .logo {
   color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.address .contacts .item{
+    display: block;
 }
 .address p {
   font-style: normal;
