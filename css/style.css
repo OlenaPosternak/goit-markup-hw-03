@@ -128,6 +128,7 @@ body {
 /*Основная секция страницы Портфолио*/
 .main-portfolio {
     padding-top: 100px;
+    padding-bottom: 94px;
 }
 
 .visually-hidden {
@@ -151,11 +152,14 @@ body {
     justify-content: center;
 }
 
-
+.portfolio-button .item:not(:last-child) {
+    margin-right: 8px;
+}
 
 .button {
   display:block;  
   padding: 6px 22px;
+  min-height: 38px;
   
    
   font-family: inherit;
@@ -174,9 +178,7 @@ body {
   border-radius: 4px;
 }
 
-.portfolio-button .button{
-    margin-left:8px;   
-}
+
 .button.primiry {
   background-color: var(--accent-color);
   color: #ffffff;
@@ -193,19 +195,46 @@ body {
 }
 
 /*Портфолио работ*/
+.main-portfolio .projects {
+    display: flex;
+    flex-wrap: wrap;
+
+       
+}
+
+.main-portfolio .projects .item {
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #EEEEEE;
+    
+}
+
+.main-portfolio img{
+    display: inline-block;
+    
+}
+.main-portfolio .projects .item:nth-child(3n)
+{
+ margin-right:0 ;   
+}
+.main-portfolio .projects .item.item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
 
 .main-portfolio li {
   list-style: none;
+  
 }
 
-/*
-.main-portfolio a:visited,
-.main-portfolio a:focus,
-.main-portfolio a:hover {
-  color: var(--main-color);
+/*Наполнение карточки проэктов*/
+
+.projects .project-info{
+    margin: 20px 24px;
+    
 }
-*/
 .projects-card-title {
+  margin-bottom: 4px;  
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
