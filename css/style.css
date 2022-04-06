@@ -255,7 +255,7 @@ body {
 }
 
 /*Футер*/
-footer {
+.footer {
   background-color: var(--second-bcg-color);
 }
 
