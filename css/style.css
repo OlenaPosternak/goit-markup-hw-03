@@ -17,7 +17,9 @@ h1, h2, h3, h4, h5, h6, p, ul{
     margin:0;
     padding: 0;
 }
-
+ul{
+    list-style: none;
+}
 img{
     display: block;
     max-width: 100%;
@@ -163,7 +165,7 @@ body {
 }
 
 .button {
-  display:block;  
+  display:inline-block;  
   padding: 6px 22px;
   min-height: 38px;
   
@@ -302,7 +304,17 @@ footer {
   background-color: var(--second-bcg-color);
 }
 
+.main-hero .button{
+    display: inline-block;
+}
+.main-hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+
+}
 .hero h1 {
+  margin-bottom: 30px;  
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -314,14 +326,16 @@ footer {
   color: #ffffff;
 }
 
-.hero button {
+.hero .button {
+  min-width: 200px;
+  min-height: 50px;
+  padding: 10px 32px;
   font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
 
-  display: flex;
-  align-items: center;
+ 
   text-align: center;
   letter-spacing: 0.06em;
 
@@ -338,12 +352,18 @@ footer {
 }
 
 /* О компании*/
-.features ul,
-.about-us ul,
-.team ul {
-  list-style: none;
+.features{
+    display: flex;
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
+.features .item+.item{
+    margin-left: 30px;
 }
 .features h3 {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -356,21 +376,52 @@ footer {
   font-size: 14px;
   line-height: 1.71;
 }
-
+/*Чем мы занимаемся*/
+.about-us {
+    margin-bottom: 94px;
+}
 .about-us h2,
 .team h2 {
+  margin-bottom: 50px;  
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--title-color);
 }
-
+.about-us-info{
+    display: flex;
+}
+.about-us-info .item+.item{
+    margin-left: 30px;
+}
 /*Команда*/
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;  
   background-color: var(--button-main-color);
 }
-.team h3 {
+
+.team-meamber{
+    display: flex;
+}
+
+.team-meamber .item+.item{
+    margin-left: 30px;
+}
+
+.team-meamber .item {
+    width: 270px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.team-meamber h3 {
+  margin-top:30px ;  
+margin-bottom: 10px;
+
   font-size: 16px;
   font-weight: 500;
   line-height: 1.18;
@@ -378,7 +429,8 @@ footer {
 
   color: var(--title-color);
 }
-.team p {
+.team-meamber p {
+  margin-bottom: 30px;  
   line-height: 1.19;
 
   text-align: center;
