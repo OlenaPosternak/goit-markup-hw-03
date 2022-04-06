@@ -115,7 +115,7 @@ body {
 
 .header{
     justify-content: space-between;
-    
+    min-height: 80px;
 }
 .header .contacts .item+.item{
     margin-left: 50px;
