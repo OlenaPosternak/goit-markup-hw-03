@@ -46,8 +46,6 @@ body {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-
-  
 }
 
 /*Хедер, основная навигация страницы*/
@@ -139,10 +137,6 @@ header{
   color: var(--accent-color);
 }
 /*Основная секция страницы Портфолио*/
-.main-portfolio {
-    padding-top: 100px;
-    padding-bottom: 94px;
-}
 
 .visually-hidden {
         position: absolute;
@@ -183,9 +177,7 @@ header{
   background-color: var(--button-main-color);
   cursor: pointer;
 
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-  0px 1px 2px rgba(0, 0, 0, 0.08),
-  0px 2px 2px rgba(0, 0, 0, 0.12);
+
   
   border: none;
   border-radius: 4px;
@@ -200,11 +192,19 @@ header{
 .button.primiry:focus {
   background-color: var(--button-main-color);
   color: var(--title-color);
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button.secondary:hover,
 .button.secondary:focus {
   color: var(--accent-color);
   background-color: var(--main-bcg-color);
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*Портфолио работ*/
@@ -301,7 +301,10 @@ footer {
 }
 
 /*Стили главной страницы*/
-
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .hero {
   background-color: var(--second-bcg-color);
 }
@@ -310,9 +313,9 @@ footer {
     display: inline-block;
 }
 .main-hero{
-    padding-top: 200px;
-    padding-bottom: 200px;
     text-align: center;
+    padding-top: 104px;
+    padding-bottom: 104px;
 
 }
 .hero h1 {
@@ -356,8 +359,7 @@ footer {
 /* О компании*/
 .features{
     display: flex;
-    margin-top: 94px;
-    margin-bottom: 94px;
+
 }
 
 .features .item+.item{
@@ -379,8 +381,9 @@ footer {
   line-height: 1.71;
 }
 /*Чем мы занимаемся*/
-.about-us {
-    margin-bottom: 94px;
+.about-us{
+    padding-top: 0px;
+
 }
 .about-us h2,
 .team h2 {
@@ -398,9 +401,7 @@ footer {
     margin-left: 30px;
 }
 /*Команда*/
-.team {
-  padding-top: 94px;
-  padding-bottom: 94px;  
+.team { 
   background-color: var(--button-main-color);
 }
 

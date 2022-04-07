@@ -6,10 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+
+
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
 
 </head>
 
@@ -39,8 +45,8 @@
     <!--Наполнение страницы -->
     <main>
         <!-- Главный баннер -->
-        <section class="hero">
-            <div class="container main-hero">
+        <section class="hero section">
+            <div class="main-hero container">
                 <h1>
                     Эффективные решения <br> для вашего бизнеса
                 </h1>
@@ -50,50 +56,58 @@
         </section>
 
         <!-- О компании -->
-        <section class="container">
-            <h2 class="visually-hidden "> Скрытый заголовок </h2>
-            <ul class="features">
-                <li class="item">
-                    <h3>Внимание к деталям</h3>
-                    <p> Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                </li>
-                <li class="item">
-                    <h3>Пунктуальность</h3>
-                    <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                </li>
-                <li class="item">
-                    <h3>Планирование</h3>
-                    <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                </li>
-                <li class="item">
-                    <h3>Современные технологии</h3>
-                    <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                </li>
-            </ul>
+
+
+        <section class="section">
+            <div class="container">
+                <h2 class="visually-hidden "> Скрытый заголовок </h2>
+                <ul class="features">
+                    <li class="item">
+                        <h3>Внимание к деталям</h3>
+                        <p> Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    </li>
+                    <li class="item">
+                        <h3>Пунктуальность</h3>
+                        <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                    </li>
+                    <li class="item">
+                        <h3>Планирование</h3>
+                        <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                    </li>
+                    <li class="item">
+                        <h3>Современные технологии</h3>
+                        <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <!-- Чем мы занимаемся -->
-        <section class="about-us container">
-            <h2 class="">Чем мы занимаемся</h2>
-            <ul class="about-us-info">
-                <li class="item">
-                    <img src="./images/box1.jpg" alt="человек печатает код" width="370">
-                </li>
+        <section class=" section about-us">
+            <div class="container">
+                <h2 class="">Чем мы занимаемся</h2>
+                <ul class="about-us-info">
+                    <li class="item">
+                        <img src="./images/box1.jpg" alt="человек печатает код" width="370">
+                    </li>
 
-                <li class="item">
-                    <img src="./images/box2.jpg" alt="отображение макета на мобильном устройстве" width="370">
-                </li>
+                    <li class="item">
+                        <img src="./images/box2.jpg" alt="отображение макета на мобильном устройстве" width="370">
+                    </li>
 
-                <li class="item">
-                    <img src="./images/box3.jpg" alt="разработка дизайна" width="370">
-                </li>
-            </ul>
+                    <li class="item">
+                        <img src="./images/box3.jpg" alt="разработка дизайна" width="370">
+                    </li>
+                </ul>
+            </div>
 
         </section>
 
         <!-- Наша команда -->
-        <section class="team">
+
+        <section class="team section">
             <div class="container">
+
                 <h2>Наша команда</h2>
                 <ul class="team-meamber">
                     <li class="item">
@@ -118,16 +132,16 @@
                     </li>
                 </ul>
 
-
             </div>
+
         </section>
 
     </main>
 
     <!-- Футер -->
-    <footer>
+    <footer class="footer">
 
-        <div class="container footer">
+        <div class="container ">
             <a href="" class="logo"><span class="logo-color">Web</span>Studio</a>
             <address class="address">
                 <div class="contacts">
